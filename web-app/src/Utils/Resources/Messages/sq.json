@@ -1,0 +1,21 @@
+{
+  "Questions": "Pyetjet",
+  "TypeOfQuestionsForQuiz": "Llojet e pyetjeve për këtë kuiz janë",
+  "GoBack": "Kthehu mbrapa",
+  "StartQuiz": "Filloni kuizin",
+  "ChooseQuizToStart": "Zgjidhni cilin kuiz dëshironi të filloni?",
+  "QuizDescription": "Çdo kuiz do të ketë të paktën 10 pyetje. E vërtetë/E gabuar, Zgjidh përgjigje të vetme, Zgjidh përgjigje të shumta.",
+  "Finish": "Përfundo",
+  "NextQuestion": "Pyetja e radhës",
+  "AnswerCorrect": "Përgjigja juaj është e saktë!",
+  "AnswerIncorrect": "Përgjigja juaj është e pasaktë!",
+  "Okay": "Mirë",
+  "OnlineTestingApp": "Aplicationi i testimit në internet",
+  "Question": "Pyetje",
+  "Correct": "Saktë",
+  "Incorrect": "Pasaktë",
+  "Results": "Rezultatet",
+  "QuestionsAnsweredCorrectly": "pyetjeve të përgjigjura saktë ose",
+  "ListCorretIncorrect": "Lista e pyetjeve të sakta dhe të pasakta",
+  "questionsLower": " pyetje"
+}

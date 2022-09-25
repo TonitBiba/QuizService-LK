@@ -1,0 +1,21 @@
+{
+  "Questions": "Questions",
+  "TypeOfQuestionsForQuiz": "Type of questions for this quiz are",
+  "GoBack": "Go back",
+  "StartQuiz": "Start quiz",
+  "ChooseQuizToStart": "Choose which quiz do you want to start?",
+  "QuizDescription": "Each quiz will have at least 10 questions. True/False, Select single answer, Select multiple answers.",
+  "Finish": "Finish",
+  "NextQuestion": "Next question",
+  "AnswerCorrect": "Your answer is correct!",
+  "AnswerIncorrect": "Your answer is incorrect!",
+  "Okay": "Okay",
+  "OnlineTestingApp": "Online testing application",
+  "Question": "Question",
+  "Correct": "Correct",
+  "Incorrect": "Incorrect",
+  "Results": "Results",
+  "QuestionsAnsweredCorrectly": "questions answered correctly or",
+  "ListCorretIncorrect": "List of correct and incorrect questions",
+  "questionsLower": " questions"
+}

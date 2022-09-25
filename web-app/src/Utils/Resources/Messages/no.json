@@ -1,0 +1,21 @@
+{
+  "Questions": "Spørsmål",
+  "TypeOfQuestionsForQuiz": "Type spørsmål for denne quizen er",
+  "GoBack": "Gå tilbake",
+  "StartQuiz": "Start quiz",
+  "ChooseQuizToStart": "Velg hvilken quiz du vil starte?",
+  "QuizDescription": "Hver quiz vil ha minst 10 spørsmål. Sant/usant, velg enkelt svar, velg flere svar.",
+  "Finish": "Bli ferdig",
+  "NextQuestion": "Neste spørsmål",
+  "AnswerCorrect": "Svaret ditt er riktig!",
+  "AnswerIncorrect": "Svaret ditt er feil!",
+  "Okay": "Greit",
+  "OnlineTestingApp": "Online testapplikasjon",
+  "Question": "Spørsmål",
+  "Correct": "Riktig",
+  "Incorrect": "Stemmer ikke",
+  "Results": "Resultater",
+  "QuestionsAnsweredCorrectly": "spørsmål besvart riktig eller",
+  "ListCorretIncorrect": "Liste over riktige og feil spørsmål",
+  "questionsLower": " spørsmål"
+}

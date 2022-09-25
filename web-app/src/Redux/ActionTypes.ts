@@ -1,0 +1,5 @@
+export const SETTHEME = "SETTHEME";
+export const SET_ERROR = "SETERROR";
+export const SET_QUESTION = "SETQUESTION";
+export const SET_TOTAL_QUESTION = "SETTOTALQUESTION";
+export const SET_LANGUAGE = "SETLANGUAGE";
