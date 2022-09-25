@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using QuizService.Data;
+using QuizService.General;
 using QuizService.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,6 +36,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseCors();
+
+app.UseExceptionHandlerMiddleware();
 
 SeedDatabase();
 

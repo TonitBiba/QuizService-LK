@@ -82,8 +82,8 @@
                     },
                     new Question { Nr = 8, Name_SQ = "Kocka më e gjatë në trupin e njeriut është Femuri?", Name_EN = "The longest bone in the human body is the Femur?", Name_NO = "Det lengste beinet i menneskekroppen er lårbenet?", QuestionTypeID = 1,
                         Options = new[]{
-                            new Option { Name_SQ = "Saktë", Name_EN = "True", Name_NO = "Sant", IsCorrect = false},
-                            new Option { Name_SQ = "Gabim", Name_EN = "False", Name_NO = "Falsk", IsCorrect = true},
+                            new Option { Name_SQ = "Saktë", Name_EN = "True", Name_NO = "Sant", IsCorrect = true},
+                            new Option { Name_SQ = "Gabim", Name_EN = "False", Name_NO = "Falsk", IsCorrect = false},
                         }
                     },
                     new Question { Nr = 9, Name_SQ = "Cilat janë llojet e vertebrave në trupin e njeriut?", Name_EN = "What are the types of vertebrae in the human body?", Name_NO = "Hva er typene ryggvirvler i menneskekroppen?", QuestionTypeID = 3,
@@ -106,6 +106,113 @@
             };
 
             context.Quiz.Add(newQuiz);
+
+            Quiz newQuizProgramming = new()
+            {
+                Name_SQ = "SQL Quiz",
+                Name_EN = "SQL Quiz",
+                Name_NO = "SQL Quiz",
+                Image = "/media/quizzes/sql.png",
+                Description_SQ = "Në këtë SQL Quiz, ne do të përpiqemi të testojmë njohuritë tona për konceptet SQL.",
+                Description_EN = "In this SQL Quiz, we will try to test our knowledge of the SQL Concepts.",
+                Description_NO = "I denne SQL-quizen vil vi prøve å teste kunnskapen vår om SQL-konseptene.",
+                Questions = new[]
+                {
+                    new Question { Nr = 1, Name_SQ = "Çfarë do të thotë SQL?", Name_EN = "What does SQL stand for?", Name_NO = "Hva står SQL for?", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "Strong Question Language", Name_EN = "Strong Question Language", Name_NO = "Strong Question Language", IsCorrect = false},
+                            new Option { Name_SQ = "Structured Query Language", Name_EN = "Structured Query Language", Name_NO = "Structured Query Language", IsCorrect = true},
+                            new Option { Name_SQ = "Structured Question Language", Name_EN = "Structured Question Language", Name_NO = "Structured Question Language", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 2, Name_SQ = "Cila deklaratë SQL përdoret për të përditësuar të dhënat në një bazë të dhënash?", Name_EN = "Which SQL statement is used to update data in a database?", Name_NO = "Hvilken SQL-setning brukes til å oppdatere data i en database?", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "Update", Name_EN = "Update", Name_NO = "Update", IsCorrect = true},
+                            new Option { Name_SQ = "Save", Name_EN = "Save", Name_NO = "Save", IsCorrect = false},
+                            new Option { Name_SQ = "Copy", Name_EN = "Copy", Name_NO = "Copy", IsCorrect = false},
+                            new Option { Name_SQ = "Save as", Name_EN = "Save as", Name_NO = "Save as", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 3, Name_SQ = "Me SQL, si i zgjidhni të gjitha kolonat nga një tabelë me emrin 'Persons'?", Name_EN = "With SQL, how do you select all the columns from a table named 'Persons'?", Name_NO = "Med SQL, hvordan velger du alle kolonnene fra en tabell som heter 'Personer'?", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "SELECT Persons", Name_EN = "SELECT Persons", Name_NO = "SELECT Persons", IsCorrect = false},
+                            new Option { Name_SQ = "SELECT * FROM Persons", Name_EN = "SELECT * FROM Persons", Name_NO = "SELECT * FROM Persons", IsCorrect = true},
+                            new Option { Name_SQ = "SELECT [all] FROM Persons", Name_EN = "SELECT [all] FROM Persons", Name_NO = "SELECT [all] FROM Persons", IsCorrect = false},
+                            new Option { Name_SQ = "SELECT *.Persons", Name_EN = "SELECT *.Persons", Name_NO = "SELECT *.Persons", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 4, Name_SQ = "", Name_EN = "With SQL, how do you select all the records from a table named 'Persons' where the value of the column 'FirstName' starts with an 'a'?", Name_NO = "", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "SELECT * FROM Persons WHERE FirstName LIKE '%a'", Name_EN = "SELECT * FROM Persons WHERE FirstName LIKE '%a'", Name_NO = "SELECT * FROM Persons WHERE FirstName LIKE '%a'", IsCorrect = true},
+                            new Option { Name_SQ = "SELECT * FROM Persons WHERE FirstName='%a%'", Name_EN = "SELECT * FROM Persons WHERE FirstName='%a%'", Name_NO = "SELECT * FROM Persons WHERE FirstName='%a%'", IsCorrect = false},
+                            new Option { Name_SQ = "SELECT * FROM Persons WHERE FirstName='a'", Name_EN = "SELECT * FROM Persons WHERE FirstName='a'", Name_NO = "SELECT * FROM Persons WHERE FirstName='a'", IsCorrect = false},
+                            new Option { Name_SQ = "SELECT * FROM Persons WHERE FirstName LIKE 'a%'", Name_EN = "SELECT * FROM Persons WHERE FirstName LIKE 'a%'", Name_NO = "SELECT * FROM Persons WHERE FirstName LIKE 'a%'", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 5, Name_SQ = "", Name_EN = "Which of the following are keys in SQL?", Name_NO = "", QuestionTypeID = 3,
+                        Options = new[]{
+                            new Option { Name_SQ = "Primary Key", Name_EN = "Primary Key", Name_NO = "Primary Key", IsCorrect = true},
+                            new Option { Name_SQ = "Foreign Key", Name_EN = "Foreign Key", Name_NO = "Foreign Key", IsCorrect = true},
+                            new Option { Name_SQ = "Unique Key", Name_EN = "Unique Key", Name_NO = "Unique Key", IsCorrect = true},
+                            new Option { Name_SQ = "Implicit Key", Name_EN = "Implicit Key", Name_NO = "Implicit Key", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 6, Name_SQ = "Cilat nga këto janë llojet e transaksioneve në SQL?", Name_EN = "Which of the following are type of Transactions in SQL?", Name_NO = "Hvilke av følgende er typene transaksjoner i SQL?", QuestionTypeID = 3,
+                        Options = new[]{
+                            new Option { Name_SQ = "Modeli i transaksionit", Name_EN = "Model transaction", Name_NO = "Modelltransaksjon", IsCorrect = false},
+                            new Option { Name_SQ = "Transaksioni i nënkuptuar", Name_EN = "Implicit Transaction", Name_NO = "Implisitt transaksjon", IsCorrect = true},
+                            new Option { Name_SQ = "Transaksione të avancuara", Name_EN = "Advanced transactions", Name_NO = "Avanserte transaksjoner", IsCorrect = false},
+                            new Option { Name_SQ = "Transaksion i qartë", Name_EN = "Explicit Transaction", Name_NO = "Eksplisitt transaksjon", IsCorrect = true},
+                        }
+                    },
+                    new Question { Nr = 7, Name_SQ = "Operatori OR shfaq një rekord nëse NDONJË kusht i listuar është i vërtetë. Operatori AND shfaq një rekord nëse TË GJITHA kushtet e listuara janë të vërteta", Name_EN = "The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true", Name_NO = "ELLER-operatøren viser en post hvis NOEN vilkår som er oppført er sanne. OG-operatoren viser en post hvis ALLE betingelsene som er oppført er sanne", QuestionTypeID = 1,
+                        Options = new[]{
+                            new Option { Name_SQ = "Saktë", Name_EN = "True", Name_NO = "Sant", IsCorrect = true},
+                            new Option { Name_SQ = "Gabim", Name_EN = "False", Name_NO = "Falsk", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 8, Name_SQ = "Cili deklaratë SQL përdoret për të kthyer vetëm vlera të ndryshme?", Name_EN = "Which SQL statement is used to return only different values?", Name_NO = "Hvilken SQL-setning brukes til å returnere bare forskjellige verdier?", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "SELECT UNIQUE", Name_EN = "SELECT UNIQUE", Name_NO = "SELECT UNIQUE", IsCorrect = false},
+                            new Option { Name_SQ = "SELECT DISTINCT", Name_EN = "SELECT DISTINCT", Name_NO = "SELECT DISTINCT", IsCorrect = true},
+                            new Option { Name_SQ = "SELECT DIFFERENT", Name_EN = "SELECT DIFFERENT", Name_NO = "SELECT DIFFERENT", IsCorrect = false},
+                        }
+                    },
+                    new Question { Nr = 9, Name_SQ = "Me SQL, si mund ta ktheni numrin e regjistrimeve në tabelën 'Personat'?", Name_EN = "With SQL, how can you return the number of records in the 'Persons' table?", Name_NO = "Hvordan kan du returnere antall poster i 'Personer'-tabellen med SQL?", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "SELECT COUNT(*) FROM Persons", Name_EN = "SELECT COUNT(*) FROM Persons", Name_NO = "SELECT COUNT(*) FROM Persons", IsCorrect = true },
+                            new Option { Name_SQ = "", Name_EN = "SELECT LEN(*) FROM Persons", Name_NO = "", IsCorrect = false },
+                            new Option { Name_SQ = "", Name_EN = "SELECT COLUMNS(*) FROM Persons", Name_NO = "", IsCorrect = false },
+                            new Option { Name_SQ = "", Name_EN = "SELECT NO(*) FROM Persons", Name_NO = "", IsCorrect = false },
+                        }
+                    },
+                    new Question { Nr = 10, Name_SQ = "", Name_EN = "Which of the folliwing are type of joins in SQL?", Name_NO = "", QuestionTypeID = 3,
+                        Options = new[]{
+                            new Option { Name_SQ = "Aorta", Name_EN = "Aorta", Name_NO = "INNER LEFT JOIN", IsCorrect = false },
+                            new Option { Name_SQ = "Vena e vogël kardiake", Name_EN = "FULL OUTER JOIN", Name_NO = "Liten hjertevene", IsCorrect = true },
+                            new Option { Name_SQ = "Vene e madhe kardiake", Name_EN = "RIGHT OUTER JOIN", Name_NO = "Flott hjertevene", IsCorrect = true },
+                            new Option { Name_SQ = "Arteriet koronare", Name_EN = "JOIN", Name_NO = "Koronararterier", IsCorrect = true },
+                        }
+                    },
+                     new Question { Nr = 11, Name_SQ = "", Name_EN = "The NOT NULL constraint enforces a column to not accept NULL values.", Name_NO = "", QuestionTypeID = 1,
+                        Options = new[]{
+                            new Option { Name_SQ = "Saktë", Name_EN = "True", Name_NO = "Sant", IsCorrect = true},
+                            new Option { Name_SQ = "Gabim", Name_EN = "False", Name_NO = "Falsk", IsCorrect = false},
+                        }
+                    },
+                      new Question { Nr = 12, Name_SQ = "", Name_EN = "Which SQL statement is used to create a database table called 'Customers'?", Name_NO = "", QuestionTypeID = 2,
+                        Options = new[]{
+                            new Option { Name_SQ = "", Name_EN = "CREATE DATABASE TAB Customers", Name_NO = "", IsCorrect = false },
+                            new Option { Name_SQ = "", Name_EN = "CREATE TABLE Customers", Name_NO = "", IsCorrect = true },
+                            new Option { Name_SQ = "", Name_EN = "CREATE DB Customers", Name_NO = "", IsCorrect = false },
+                            new Option { Name_SQ = "", Name_EN = "CREATE DATABASE TABLE Customers", Name_NO = "", IsCorrect = false },
+                        }
+                    },
+                }
+            };
+
+            context.Quiz.Add(newQuiz);
+            context.Quiz.Add(newQuizProgramming);
             context.SaveChanges();
         }
     }
